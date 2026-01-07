@@ -1,0 +1,1 @@
+// Submit admin credentials and store JWT in sessionStorage

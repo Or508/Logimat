@@ -1,0 +1,6 @@
+:root {
+  --primary-color: #333;
+}
+
+/* Global Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
