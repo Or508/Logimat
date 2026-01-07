@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Meeting Platform - צור לי אתר = הגשם לי חלום</title>
+    
+    <!-- Google Fonts - טיפוגרפיה יוקרתית -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS - Animate On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="client/css/globals.css">
+    <link rel="stylesheet" href="client/css/home.css">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-sparkles"></i>
+                <span>Smart Meeting</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">דף בית</a></li>
+                <li><a href="#about" class="nav-link">אודות</a></li>
+                <li><a href="#services" class="nav-link">שירותים</a></li>
+                <li><a href="#projects" class="nav-link">פרויקטים</a></li>
+                <li><a href="client/pages/meeting/meeting.html" class="nav-link">פגישה</a></li>
+                <li><a href="admin/login/admin-login.html" class="nav-link btn-nav">התחברות</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    <span class="gradient-text">צור לי אתר</span>
+                    <span class="hero-equals">=</span>
+                    <span class="gradient-text">הגשם לי חלום</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    בינה מלאכותית מתקדמת יוצרת עבורך אתר יוקרתי ומותאם אישית
+                    <br>כל חלום יכול להפוך למציאות דיגיטלית
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="test-ai.html" class="btn btn-primary">
+                        <span>צור אתר עכשיו</span>
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <span>גלה עוד</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="300">
+                <div class="floating-card card-1">
+                    <i class="fas fa-palette"></i>
+                    <span>עיצוב יוקרתי</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fas fa-robot"></i>
+                    <span>AI מתקדם</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-rocket"></i>
+                    <span>פתרון מהיר</span>
+                </div>
+                <div class="hero-mockup">
+                    <div class="mockup-screen">
+                        <div class="screen-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">לקוחות מרוצים</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-count="1200">0</div>
+                    <div class="stat-label">פרויקטים מושלמים</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-number" data-count="24">0</div>
+                    <div class="stat-label">שעות ממוצע להשלמה</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">% שביעות רצון</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">שירותים שלנו</span>
+                <h2 class="section-title">מה אנחנו מציעים</h2>
+                <p class="section-description">פתרונות דיגיטליים מתקדמים להצלחת העסק שלך</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>עיצוב ב-AI</h3>
+                    <p>בינה מלאכותית מתקדמת יוצרת עבורך עיצוב יוקרתי ומותאם אישית בתוך דקות</p>
+                    <a href="test-ai.html" class="service-link">
+                        גלה עוד <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>פיתוח מותאם</h3>
+                    <p>אתרים מותאמים אישית עם טכנולוגיות מתקדמות וקוד נקי ואיכותי</p>
+                    <a href="client/pages/projects/projects.html" class="service-link">
+                        גלה עוד <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>ניהול פגישות</h3>
+                    <p>קביעת פגישות נוחה ומהירה עם מערכת חכמה לניהול לוח זמנים</p>
+                    <a href="client/pages/meeting/meeting.html" class="service-link">
+                        גלה עוד <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+                
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>ייעוץ אסטרטגי</h3>
+                    <p>ליווי מקצועי משלב התכנון ועד להשלמת הפרויקט בצורה מושלמת</p>
+                    <a href="client/pages/about/about.html" class="service-link">
+                        גלה עוד <i class="fas fa-arrow-left"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section" id="about">
+        <div class="container">
+            <div class="features-content">
+                <div class="features-text" data-aos="fade-right">
+                    <span class="section-tag">למה לבחור בנו</span>
+                    <h2 class="section-title">חוויית משתמש מעולה</h2>
+                    <p class="section-description">
+                        אנחנו מתמחים ביצירת אתרים יוקרתיים שמשולבים עם טכנולוגיות מתקדמות
+                        ו-BI מתקדמת ליצירת חוויית משתמש מושלמת
+                    </p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                            <div class="feature-check">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>עיצוב יוקרתי ומקצועי</h4>
+                                <p>כל פרויקט מקבל טיפול אישי ועיצוב ייחודי</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                            <div class="feature-check">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>בינה מלאכותית מתקדמת</h4>
+                                <p>טכנולוגיות AI חדשניות ליצירת עיצובים מושלמים</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                            <div class="feature-check">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>מהירות וזמינות</h4>
+                                <p>תגובה מהירה וזמינות 24/7 לכל שאלה או בקשה</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="features-visual" data-aos="fade-left">
+                    <div class="visual-card">
+                        <div class="card-glow"></div>
+                        <div class="card-content">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>אבטחה ברמה גבוהה</h3>
+                            <p>הגנה מלאה על המידע שלך</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>מוכן להתחיל את החלום הדיגיטלי שלך?</h2>
+                <p>בואו נדבר על הפרויקט שלך ונראה איך נוכל לעזור</p>
+                <div class="cta-buttons">
+                    <a href="client/pages/meeting/meeting.html" class="btn btn-primary btn-large">
+                        <span>קבע פגישה עכשיו</span>
+                        <i class="fas fa-calendar"></i>
+                    </a>
+                    <a href="test-ai.html" class="btn btn-secondary btn-large">
+                        <span>נסה את ה-AI</span>
+                        <i class="fas fa-magic"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-sparkles"></i>
+                        <span>Smart Meeting</span>
+                    </div>
+                    <p>צור לי אתר = הגשם לי חלום</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>קישורים מהירים</h4>
+                    <ul>
+                        <li><a href="#home">דף בית</a></li>
+                        <li><a href="#about">אודות</a></li>
+                        <li><a href="#services">שירותים</a></li>
+                        <li><a href="client/pages/projects/projects.html">פרויקטים</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>שירותים</h4>
+                    <ul>
+                        <li><a href="test-ai.html">עיצוב ב-AI</a></li>
+                        <li><a href="client/pages/meeting/meeting.html">קביעת פגישה</a></li>
+                        <li><a href="client/pages/projects/projects.html">פורטfolio</a></li>
+                        <li><a href="admin/login/admin-login.html">אזור אדמין</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>יצירת קשר</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@smartmeeting.com</li>
+                        <li><i class="fas fa-phone"></i> 03-1234567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> תל אביב, ישראל</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Smart Meeting Platform. כל הזכויות שמורות.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="client/pages/home/home.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Counter animation
+        const animateCounter = (element) => {
+            const target = parseInt(element.getAttribute('data-count'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    element.textContent = Math.floor(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            };
+            
+            updateCounter();
+        };
+
+        // Intersection Observer for counters
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target.querySelector('.stat-number');
+                    if (counter && !counter.classList.contains('counted')) {
+                        counter.classList.add('counted');
+                        animateCounter(counter);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stat-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
