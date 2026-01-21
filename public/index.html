@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIMATH - Future Web Solutions</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="ai-avatar" class="ai-orb" title="AI Assistant Online">
+        <div class="orb-core"></div>
+        <div class="orb-ring"></div>
+    </div>
+    
+    <div id="voice-control" class="voice-btn" onclick="appFlow.activateVoice()">
+        <i class="fa-solid fa-microphone"></i>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-actions">
+            <button id="auth-btn" class="login-btn" onclick="appFlow.handleAuth()">LOGIN / REGISTER</button>
+            <a href="https://calendar.google.com" target="_blank" class="icon-btn calendar-icon"><i class="fa-regular fa-calendar-days"></i></a>
+            <a href="https://wa.me/972500000000" target="_blank" class="icon-btn whatsapp-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="nav-links">
+            <a class="nav-item admin-only" onclick="appFlow.navigateTo('admin-dashboard')">COMMAND CENTER</a>
+            <a class="nav-item" onclick="appFlow.navigateTo('chatbot')">SUPPORT AI</a>
+            <a class="nav-item" onclick="appFlow.navigateTo('portfolio')">PORTFOLIO</a>
+            <a class="nav-item" onclick="appFlow.navigateTo('builder')">BUILDER</a>
+            <a class="nav-item active" onclick="appFlow.navigateTo('home')">HOME</a>
+        </div>
+        <div class="logo" onclick="appFlow.navigateTo('home')">LOGI<span>MATH</span></div>
+    </nav>
+
+    <div class="main-wrapper">
+
+        <section id="home" class="active-section">
+            <div class="title-wrapper">
+                <div class="shooting-star"></div>
+                <h1 class="hero-title">BUILD YOUR DREAM<br>IN MOMENT</h1>
+            </div>
+            <p class="hero-desc">פתרונות WEB עתידניים בזמינות 24/7. שילוב של בינה מלאכותית ועיצוב עילית.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fa-solid fa-brain feature-icon"></i>
+                    <h3>NEURAL AI</h3>
+                    <p>המוח הדיגיטלי שלנו לומד את העסק שלך ומייצר פתרונות בזמן אמת.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-solid fa-shield-halved feature-icon"></i>
+                    <h3>CYBER SECURE</h3>
+                    <p>הגנה היקפית מלאה, הצפנת קצה-לקצה ואבטחת נתונים.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fa-brands fa-ethereum feature-icon"></i>
+                    <h3>WEB 3.0 READY</h3>
+                    <p>תמיכה עתידית בתשלומי קריפטו וחיבור לארנקים דיגיטליים.</p>
+                </div>
+            </div>
+            
+            <button class="generate-btn glow-effect" style="width: 250px; margin-top: 60px;" onclick="appFlow.navigateTo('builder')">START PROJECT 🚀</button>
+        </section>
+
+        <section id="builder">
+            <h2 class="section-title">SYSTEM ARCHITECT</h2>
+            <div class="engine-core">
+                <div class="scan-line"></div>
+                <div class="chips-container">
+                    <div class="chip" onclick="appFlow.setPrompt('אתר סייבר ואבטחת מידע, רקע שחור מטריקס')">🔐 CYBER</div>
+                    <div class="chip" onclick="appFlow.setPrompt('חנות גיימינג וציוד הקפי, ניאון סגול וכחול')">🎮 GAMING</div>
+                    <div class="chip" onclick="appFlow.setPrompt('פורטפוליו לאדריכלים, עיצוב מינימליסטי יוקרתי')">🏛️ ARCHITECTURE</div>
+                </div>
+                <textarea id="desc" placeholder="Initialize System Protocol... (Describe your vision)"></textarea>
+                <button class="generate-btn" onclick="appFlow.generateSite()">GENERATE SYSTEM ⚡</button>
+            </div>
+            <div id="preview-box"></div>
+        </section>
+
+        <section id="portfolio">
+            <h2 class="section-title">HOLOGRAPHIC ARCHIVE</h2>
+            <div class="holo-grid">
+                <div class="holo-card">
+                    <div class="holo-badge">COMPLETED</div>
+                    <div class="holo-title">CyberShield</div>
+                    <div class="holo-desc">מערכת הגנה היקפית לארגונים.</div>
+                    <div class="holo-line"></div>
+                </div>
+                <div class="holo-card">
+                    <div class="holo-badge">SOLD</div>
+                    <div class="holo-title">Neon Pulse</div>
+                    <div class="holo-desc">חנות איקומרס לסניקרס נדירות.</div>
+                    <div class="holo-line"></div>
+                </div>
+                <div class="holo-card">
+                    <div class="holo-badge">LIVE</div>
+                    <div class="holo-title">Dr. Future</div>
+                    <div class="holo-desc">קליניקה אסתטית מתקדמת.</div>
+                    <div class="holo-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chatbot">
+            <div class="construction-container">
+                <i class="fa-solid fa-microchip construction-icon"></i>
+                <h2 class="section-title">AI LEARNING MODE</h2>
+                <p class="hero-desc">הצ'אטבוט שלנו עובר הכשרה כרגע... יהיה זמין בגרסה 2.0</p>
+                <div class="loader-bar"><div class="bar-fill"></div></div>
+            </div>
+        </section>
+
+        <section id="login">
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" onclick="appFlow.switchAuthMode('login')">LOGIN</div>
+                    <div class="auth-tab" onclick="appFlow.switchAuthMode('register')">REGISTER</div>
+                </div>
+
+                <div id="login-form" class="auth-form active-form">
+                    <h2 class="section-title">SYSTEM ACCESS</h2>
+                    <p style="color: #666; margin-bottom: 20px;">הזן פרטי זיהוי לכניסה למערכת</p>
+                    
+                    <div class="input-group">
+                        <i class="fa-solid fa-user input-icon"></i>
+                        <input type="text" id="login-email" placeholder="Email / Username">
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock input-icon"></i>
+                        <input type="password" id="login-pass" placeholder="Password">
+                    </div>
+
+                    <button class="generate-btn" onclick="appFlow.performLogin()">SECURE LOGIN <i class="fa-solid fa-shield-halved"></i></button>
+                    <p id="login-error" class="error-msg">Access Denied: Invalid Credentials</p>
+                </div>
+
+                <div id="register-form" class="auth-form">
+                    <h2 class="section-title">NEW CLIENT PROTOCOL</h2>
+                    <p style="color: #666; margin-bottom: 20px;">יצירת זהות דיגיטלית חדשה</p>
+
+                    <div class="form-row">
+                        <div class="input-group">
+                            <i class="fa-solid fa-signature input-icon"></i>
+                            <input type="text" id="reg-fname" placeholder="First Name">
+                        </div>
+                        <div class="input-group">
+                            <i class="fa-solid fa-signature input-icon"></i>
+                            <input type="text" id="reg-lname" placeholder="Last Name">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope input-icon"></i>
+                        <input type="email" id="reg-email" placeholder="Official Email">
+                    </div>
+                    
+                    <div class="input-group">
+                        <i class="fa-solid fa-phone input-icon"></i>
+                        <input type="tel" id="reg-phone" placeholder="Phone (05X-XXXXXXX)">
+                    </div>
+
+                    <div class="input-group">
+                        <i class="fa-solid fa-key input-icon"></i>
+                        <input type="password" id="reg-pass" placeholder="Create Password">
+                    </div>
+
+                    <button class="generate-btn" onclick="appFlow.performRegister()">INITIALIZE ACCOUNT <i class="fa-solid fa-user-plus"></i></button>
+                    <p id="reg-error" class="error-msg"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="admin-dashboard">
+            <h2 class="section-title" style="color: #b000ff;">COMMAND CENTER</h2>
+            
+            <div class="dashboard-stats">
+                <div class="stat-box">
+                    <h3>TOTAL REVENUE</h3>
+                    <div class="stat-number">₪145,000</div>
+                    <div class="stat-change up">▲ 12% החודש</div>
+                </div>
+                <div class="stat-box">
+                    <h3>PROJECTS BUILT</h3>
+                    <div class="stat-number">84</div>
+                    <div class="stat-change">Total Systems</div>
+                </div>
+                <div class="stat-box">
+                    <h3>AVG. PRICE</h3>
+                    <div class="stat-number">₪5,200</div>
+                    <div class="stat-change up">▲ 5% עלייה</div>
+                </div>
+            </div>
+
+            <div class="charts-container">
+                <div class="chart-box">
+                    <h3>Monthly Sales (2026)</h3>
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="chart-box">
+                    <h3>Category Popularity</h3>
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+
+            <div class="live-terminal">
+                <div class="terminal-header">🔴 LIVE SYSTEM LOGS</div>
+                <div class="terminal-content" id="terminal-logs"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="leadModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="appFlow.closeModal()">✖</span>
+            <h2 style="color: #b000ff;">SYSTEM SAVE</h2>
+            <input type="text" id="fname" placeholder="FULL NAME">
+            <input type="tel" id="phone" placeholder="PHONE NUMBER">
+            <button class="generate-btn" onclick="appFlow.submitLead()">SAVE DATA</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
